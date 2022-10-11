@@ -44,6 +44,6 @@ a:focus {
     background-color: lightskyblue;
 }
 
-header footer {
-    background-color: aqua;
+header, footer{
+    background-color: lightblue;
 }
