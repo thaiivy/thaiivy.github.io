@@ -1,0 +1,49 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.site-title {
+    color: brown;
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+li.hobby {
+    list-style-type: square;
+}
+
+li.hobby:nth-child(odd) {
+    background: #CAE7B9;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    background-color: lightcoral;
+}
+
+a {
+    border-style: dotted;
+    border-color: aquamarine;
+}
+
+a:hover {
+    background-color: lightskyblue;
+}
+
+a:focus {
+    background-color: lightskyblue;
+}
+
+header footer {
+    background-color: aqua;
+}
