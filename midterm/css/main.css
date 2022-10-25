@@ -1,0 +1,23 @@
+body {
+    background-color: #aad4cf;
+}
+nav ul li {
+    display: inline-block;
+}
+
+#home {
+    border-right: 2px;
+}
+
+#contact {
+    border-left: 2px;
+}
+
+/* .container {
+    width: 500 px;
+    margin: 0 auto;
+} */
+
+img {
+    float: left;
+}
