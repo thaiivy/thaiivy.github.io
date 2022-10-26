@@ -31,9 +31,12 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+
+/* I commented out this reset because I wanted to retain the bullet points*/
+/* ol, ul {
 	list-style: none;
-}
+} */
+
 blockquote, q {
 	quotes: none;
 }

@@ -1,23 +1,57 @@
+/* gives site background colour */
 body {
     background-color: #aad4cf;
-}
-nav ul li {
-    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#home {
+/* styles navbar horizontally */
+nav ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+/* li.home {
     border-right: 2px;
 }
 
-#contact {
+li.contact {
     border-left: 2px;
-}
+} */
 
 /* .container {
-    width: 500 px;
+    width: 50%;
     margin: 0 auto;
 } */
 
 img {
     float: left;
+}
+
+/* centers content container and adds width, background colour */
+.center {
+    width: 70%;
+    margin: auto;
+    background-color:#D4E9E7;
+}
+
+/* styles fact list */
+li.listitem {
+    list-style-position: inside;
+}
+
+div.wideimage {
+    width: 70%;
+    margin: auto;
+}
+
+.titleimage {
+    position: relative;
+    text-align: center;
+}
+
+.titletext {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
