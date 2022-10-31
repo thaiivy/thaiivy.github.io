@@ -2,29 +2,30 @@
 body {
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 5pt;
 }
 
 /* styles navbar horizontally */
 nav ul li {
     display: inline-block;
-    margin: auto;
+    overflow: hidden;
 }
 
-/* li.home {
-    border-right: 2px;
+/* removes underlines from links */
+a:link, a:visited {
+    text-decoration: none;
 }
 
-li.contact {
-    border-left: 2px;
-} */
+a:hover, a:active {
+    text-decoration: none;
+}
 
-/* .container {
-    width: 50%;
-    margin: 0 auto;
-} */
-
-img {
-    float: left;
+/* styles title */
+.titletext {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 34pt;
 }
 
 /* centers content container and adds width, background colour */
@@ -34,24 +35,87 @@ img {
     background-color:#D4E9E7;
 }
 
-/* styles fact list */
+.container {
+    position: relative;
+}
+
+/* aligns headings to left */
+h1, h2, h3 {
+    text-align: left;
+}
+
+/* sets heading size and spacing */
+.lifeof {
+    font-size: 18pt;
+    padding: 5pt;
+} 
+
+/* sizes article image */
+.zoomimage {
+    float: left;
+    width: 130pt;
+    height: 130pt;
+    padding: 5pt;
+    padding-right: 10pt;
+}
+
+/* sets paragraph size and spacing */
+p {
+    font-size: 10pt;
+    padding: 8pt;
+    padding-right: 15pt;
+}
+
+/* sets subheading size and spacing*/
+h2 {
+    font-size: 15pt;
+    padding-bottom: 10pt;
+}
+
+/* styles items in list */
+.factlist {
+    padding-left: 5pt;
+    padding-top: 10pt;
+}
+
 li.listitem {
     list-style-position: inside;
+    font-size: 10pt;
 }
 
-div.wideimage {
-    width: 70%;
-    margin: auto;
+/* spaces form after facts list */
+.contactform {
+    padding-left: 5pt;
+    padding-top: 20pt;
 }
 
-.titleimage {
-    position: relative;
-    text-align: center;
+.messagebox {
+    height: 2000px;
 }
 
-.titletext {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.form {
+    padding: 5pt;
+}
+
+.sendbutton {
+    padding: 10pt;
+}
+
+.submit {
+    padding: 5pt;
+    background: none;
+    border-style: groove;
+    border-width: 1pt;
+    font-size: 7pt;
+}
+
+footer {
+    text-align: right;
+    padding-bottom: 15pt;
+}
+
+.form {
+    border-style: groove;
+    border: 1px;
+    border-color: black;
 }
