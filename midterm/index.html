@@ -10,38 +10,37 @@
 </head>
 <body>
     <div class="center">
-
+        
+        <!-- inserts wide image and page title -->
         <header>
             <div class="container">
                 <img src="images/lone-starfish-wide.jpg" alt="wide photo of one starfish" id="wideimage" style="width:100%;">
                 <div class="titletext">Lone Starfish</div>
             </div>
-
-            <div class="topnav">
-                <nav>
+        <!-- creates navbar -->
+            <div>
+                <nav class="topnav">
                     <ul>
-                        <li class="home"><a href="#">HOME</a></li>
-                        <li class="story"><a href="#">STORY</a></li>
-                        <li class="contact"><a href="#">CONTACT</a></li>
+                        <li id="home"><a href="#">HOME</a></li>
+                        <li id="story"><a href="#">STORY</a></li>
+                        <li id="contact"><a href="#">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-
         <main>
-
             <div class="container">
-
+                <!-- creates article heading -->
                 <article>
                     <h1 class="lifeof">Life of a Starfish</h1>
                 </article>
-
+                <!-- inserts article paragraph and image to float -->
                 <img src="images/lone-starfish.jpg" alt="zoomed photo of one starfish" class="zoomimage">
-
                     <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.</p>
             </div>
 
+            <!-- creates fact list -->
             <article class="factlist">
                 <h2>Facts About Starfish</h2>
                 <ul>
@@ -52,62 +51,67 @@
                 </ul>
             </article>
 
-            <div class="form">
-                <form method="post">
-                    <h2 class="contactform">Contact to learn more</h2>
-                    <fieldset>
+            <!-- starts form section of page -->
+            <div>
+                <h2 class="contactform">Contact to learn more</h2>
+                <div class="formbox">
+                    <form method="post">
+                        <fieldset>
+                            <!-- lists all fields to be asked -->
+                            <div class="nametext">
+                                <label for="fullname">Your Name</label>
+                            </div>
+                            <div class="nameinput">
+                                <input id="fullname" class="inputbox">
+                            </div>
 
-                        <div>
-                            <label for="fullname">Your Name</label>
-                        </div>
-                        <div>
-                            <input id="fullname">
-                        </div>
+                            <div class="emailtext">
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="emailinput">
+                                <input id="email" class="inputbox">
+                            </div>
 
-                        <div>
-                            <label for="email">Your Email</label>
-                        </div>
-                        <div>
-                            <input id="email">
-                        </div>
+                            <div class="messagetext">
+                                <label for="message" class="messagebox">Your Message</label>
+                            </div>
+                            <div class="messageinput">
+                                <textarea id="message" class="inputbox"></textarea>
+                            </div>
+                        </fieldset>
+                    </form>
 
-                        <div>
-                            <label for="message" class="messagebox">Your Message</label>
-                        </div>
-                        <div>
-                            <textarea id="message"></textarea>
-                        </div>
+                    <!-- inserts question between form entries -->
+                    <h3 class="visitquestion">Would you like to visit the starfish?</h3>
 
-                    </fieldset>
-                </form>
+                    <!-- creates radio form with ranging answers -->
+                    <form method="post">
+                        <fieldset>
+                            <div class="visitanswer">
+                                <label for="yes">Yes</label>
+                                <input type="radio" id="yes" name="visitstarfish">
 
-                <h3>Would you like to visit the starfish?</h3>
+                                <label for="no">No</label>
+                                <input type="radio" id="no" name="visitstarfish">
 
-                <form method="post">
-                    <fieldset>
-                        <label for="yes">Yes</label>
-                        <input type="radio" id="yes" name="visitstarfish">
-
-                        <label for="no">No</label>
-                        <input type="radio" id="no" name="visitstarfish">
-
-                        <label for="maybe">Maybe</label>
-                        <input type="radio" id="maybe" name="visitstarfish">
-
-                        <div class="sendbutton">
-                            <button type="submit" class="submit">SEND</button>
-                        </div>
-                    
-                    </fieldset>
-                </form>
+                                <label for="maybe">Maybe</label>
+                                <input type="radio" id="maybe" name="visitstarfish">
+                            </div>
+                            <div class="sendbutton">
+                                <button type="submit" class="submit">SEND</button>
+                            </div>
+                        
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </main>
 
+        <!-- creates copyright at bottom of page -->
         <footer>
             <p>&copy; Lone Starfish.</p>
         </footer>
 
     </div>
-    
 </body>
 </html>

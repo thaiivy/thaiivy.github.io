@@ -5,32 +5,63 @@ body {
     padding: 5pt;
 }
 
-/* styles navbar horizontally */
-nav ul li {
-    display: inline-block;
-    overflow: hidden;
+/* styles title and layers title on image */
+.titletext {
+    position: absolute;
+    color: white;
+    font-size: 34pt;
+    top: 58%;
+    left: 33%;
 }
 
 /* removes underlines from links */
 a:link, a:visited {
     text-decoration: none;
+    color: black;
 }
 
 a:hover, a:active {
     text-decoration: none;
+    color: blue;
 }
 
-/* styles title */
-.titletext {
-    position: relative;
-    text-align: center;
-    color: white;
-    font-size: 34pt;
+/* centers navbar */
+.topnav {
+    width: 100%;
+    padding-left: 2px;
+}
+
+/* styles navbar horizontally */
+#home, #story, #contact {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 15pt;
+    height: 20pt;
+}
+
+/* creates lines between buttons */
+#story {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+
+/* spaces buttons apart */
+#home, #story {
+    padding-top: 3pt;
+    padding-left: 72pt;
+    padding-right: 72pt;
+}
+
+/* since the word "contact" is long, I used different padding */
+#contact {
+    padding-top: 3pt;
+    padding-left: 60pt;
+    padding-right: 60pt;
 }
 
 /* centers content container and adds width, background colour */
 .center {
-    width: 70%;
+    width: 71%;
     margin: auto;
     background-color:#D4E9E7;
 }
@@ -48,6 +79,7 @@ h1, h2, h3 {
 .lifeof {
     font-size: 18pt;
     padding: 5pt;
+    padding-top: 20pt;
 } 
 
 /* sizes article image */
@@ -78,6 +110,7 @@ h2 {
     padding-top: 10pt;
 }
 
+/* forces bullets into div */
 li.listitem {
     list-style-position: inside;
     font-size: 10pt;
@@ -85,37 +118,83 @@ li.listitem {
 
 /* spaces form after facts list */
 .contactform {
-    padding-left: 5pt;
-    padding-top: 20pt;
-}
-
-.messagebox {
-    height: 2000px;
-}
-
-.form {
     padding: 5pt;
+    padding-top: 15pt;
+    padding-bottom: 10pt;
+}
+
+/* adds border around form */
+.formbox {
+    padding: 5pt;
+    box-sizing: border-box;
+    border-color: black;
+    border-style: solid;
+    border-width: 1pt;
+    width: 98%;
+    margin: auto; 
+}
+
+/* sizes message input box */
+textarea {
+    padding: 15pt 2pt;
+}
+
+/* splays form across page */
+.inputbox {
+    width: 98%;
+}
+
+/* spaces form elements */
+.nametext {
+    padding-top: 15pt;
+    font-size: 10pt;
+}
+
+.emailtext, .messagetext {
+    padding-top: 10pt;
+    font-size: 10pt;
+}
+
+.nameinput, .emailinput, .messageinput {
+    padding-top: 5pt;
+}
+
+.visitquestion {
+    padding-top: 10pt;
+    padding-left: 6px;
+}
+
+.visitanswer {
+    padding-top: 15pt;
+    font-size: 10pt;
 }
 
 .sendbutton {
-    padding: 10pt;
+    padding-top: 10pt;
+    padding-bottom: 6pt;
 }
 
+fieldset {
+    padding-left: 5pt;
+}
+
+/* removes border around name input and email input */
+input {
+    border-style: none;
+}
+
+/* styles send button */
 .submit {
     padding: 5pt;
     background: none;
-    border-style: groove;
+    border-style: solid;
     border-width: 1pt;
     font-size: 7pt;
 }
 
+/* spaces and aligns footer copyright */
 footer {
     text-align: right;
     padding-bottom: 15pt;
-}
-
-.form {
-    border-style: groove;
-    border: 1px;
-    border-color: black;
+    padding-top: 15pt;
 }
