@@ -1,0 +1,36 @@
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    background-color: #222;
+    text-align: center;
+}
+
+#logo {
+    float: left;
+}
+
+.navitem {
+    text-decoration: none;
+    color: #c78c06;
+    padding: 10px;
+}
+
+/* a:link, a:visited {
+    text-align: center;
+} */
+
+a:hover, a:active {
+    background-color: #c78c06;
+    color: #222;
+}
+
+.welcome {
+    background-image: url(...images/main-banner.jpg)
+}
+
+.search-button {
+    border: #c78c06 1px solid;
+}

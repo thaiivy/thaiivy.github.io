@@ -6,45 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
 
+    <!-- Google Fonts connnection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <!-- Icons stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS Reset first -->
+    <link rel="stylesheet" href="css/reset.css">
     <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="wrapper">
+    <header class="wrapper">
     <!-- Creates navbar for anchors to parts of the page -->
         <div class="navbar">
-            <img src="images/logo.png" alt="Three Star Media's logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <!-- Searchbar -->
-            <form>
-                <input type="text" placeholder="Search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+            <div class="nav-content"></div>
+                <img id="logo" src="images/logo.png" alt="Three Star Media's logo">
+                <ul>
+                    <li><a href="#" class="navitem">Home</a></li>
+                    <li><a href="#" class="navitem">About Us</a></li>
+                    <li><a href="#" class="navitem">Services</a></li>
+                    <li><a href="#" class="navitem">Team</a></li>
+                    <li><a href="#" class="navitem">Contact</a></li>
+                </ul>
+                <!-- Searchbar -->
+                <form class="searchbar">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
         </div>
+
         <!-- First/"Welcome" strip on page, button anchors to contact form-->
-        <div class="header">
+        <div class="welcome">
             <h1>Welcome to Three Star Media</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam inventore sapiente quaerat qui ducimus. Et, repellendus? Voluptas asperiores nostrum rerum commodi excepturi, hic ea autem, doloremque dignissimos vitae itaque quos!</p>
             <button type="button">Connect with us<i class="fa fa-caret-right"></i></button>
         </div>
-        <!-- "About Us" anchor -->
-        <div class="about">
-            <img src="images/about-us.jpg" alt="lounge with pingpong table">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, quisquam dicta cum obcaecati consequuntur provident amet eum itaque eius iste, harum in doloremque, deleniti impedit reprehenderit fugiat laudantium?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam ratione iste, vel provident, blanditiis necessitatibus voluptates at doloremque nemo adipisci, dolorum nisi quo asperiores enim veritatis fuga pariatur dolor?</p>
+    </header>
+
+    <main class="wrapper">
+        <div class="wrapper">
+            <!-- "About Us" anchor -->
+            <div class="about">
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="lounge with pingpong table">
+                </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, quisquam dicta cum obcaecati consequuntur provident amet eum itaque eius iste, harum in doloremque, deleniti impedit reprehenderit fugiat laudantium?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam ratione iste, vel provident, blanditiis necessitatibus voluptates at doloremque nemo adipisci, dolorum nisi quo asperiores enim veritatis fuga pariatur dolor?</p>
+                </div>
+            </div>
         </div>
-        <!-- "Services" anchor -->
-        <div class="services">
-            <div class="our-services">
-            <h2>Our Services</h2>
+
+        <div class="strip">
+            <!-- "Services" anchor -->
+            <div class="services-title">
+                <h2>Our Services</h2>
             </div>
             <!-- Grid of services with buttons to respective pricing pages -->
             <div class="transformation">
@@ -53,7 +75,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, et non, sint enim quibusdam, quaerat tenetur qui id natus ipsam perspiciatis praesentium iure magnam quae?</p>
                 <button type="button">Digtial Plans<i class="fa fa-caret-right"></i></button>
             </div>
-            
+                
             <div class="marketing">
                 <img src="images/marketing.jpg" alt="laptop with graphs">
                 <h3>Marketing</h3>
@@ -81,79 +103,110 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, et non, sint enim quibusdam, quaerat tenetur qui id natus ipsam perspiciatis praesentium iure magnam quae?</p>
                 <button type="button">Print Plans<i class="fa fa-caret-right"></i></button>
             </div>
-            <!-- Full-width banner with button to seperate page -->
-            <div class="vision">
+        </div>
+
+        <!-- Full-width banner with button to seperate page -->
+        <div class="wrapper">
+            <div class="vision-content">
                 <h3 id="our-vision">Our Vision</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non deleniti quis ducimus quod rerum accusamus corrupti dicta obcaecati aut facere numquam.</p>
                 <button type="button">Learn More<i class="fa fa-caret-right"></i></button>
             </div>
         </div>
+
         <!-- "Team" anchor and grid -->
-        <div class="our-team">
-            <h2>Our Team</h2>
-            <div class="john">
-                <img src="images/john.jpg" alt="photo of John Doe">
-                <h4>John Doe</h4>
-                <p>CEO and Co-owner</p>
-                <hr>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque expedita quia corporis voluptas numquam voluptatem molestias dicta itaque mollitia non aliquam dolorem quisquam sit, sed repellat.</p>
-            </div>
-            <div class="bob">
-                <img src="images/bob.jpg" alt="photo of Bob Rite">
-                <h4>Bob Rite</h4>
-                <p>CEO and Co-owner</p>
-                <hr>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque expedita quia corporis voluptas numquam voluptatem molestias dicta itaque mollitia non aliquam dolorem quisquam sit, sed repellat.</p>
+        <div class="wrapper">
+            <div class="strip">
+                <div class="team-title">
+                    <h2>Our Team</h2>
+                </div>
+                    
+                <div class="john">
+                    <div class="john-image">
+                        <img src="images/john.jpg" alt="photo of John Doe">
+                        </div>
+                        <div class="john-text">
+                            <h4>John Doe</h4>
+                            <p>CEO and Co-owner</p>
+                            <hr>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque expedita quia corporis voluptas numquam voluptatem molestias dicta itaque mollitia non aliquam dolorem quisquam sit, sed repellat.</p>
+                    </div>
+                </div>
+
+                <div class="bob">
+                    <div class="bob-image">
+                        <img src="images/bob.jpg" alt="photo of Bob Rite">
+                    </div>
+                    <div class="bob-text">
+                        <h4>Bob Rite</h4>
+                        <p>CEO and Co-owner</p>
+                        <hr>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque expedita quia corporis voluptas numquam voluptatem molestias dicta itaque mollitia non aliquam dolorem quisquam sit, sed repellat.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Form box and "Contact Us" anchor-->
-        <div class="contactus">
-            <h2>Contact Us</h2>
-            <h3>Send us a message</h3>
-            <form action="#" method="post">
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
+        <div class="wrapper">
+            <div class="strip">
+                <div class="contact-title">
+                    <h2>Contact Us</h2>
+                </div>
+                
+                <div class="message-form">
+                    <h3>Send us a message</h3>
+                    <form action="#" method="post">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
 
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" required>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
 
-                <label>Message</label>
-                <textarea name="messagebox"></textarea>
+                        <label>Message</label>
+                        <textarea name="messagebox"></textarea>
 
-                <button type="submit">Send</button>
-            </form>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                
+                <!--Table of hours -->
+                <div class="hours">
+                    <table>
+                        <caption>Hours of operation</caption>
+                        <thead>
+                            <tr>
+                            <th>Days</th>
+                            <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>Monday - Friday</td>
+                            <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+
+                <!-- Embedded map of location -->
+                <div class="location">
+                    <h2>Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567608!2d-75.75712548481953!3d45.349927779099744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669179498081!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
-        <!--Table of hours -->
-        <div class="hours">
-            <table>
-                <caption>Hours of operation</caption>
-                <thead>
-                    <tr>
-                      <th>Days</th>
-                      <th>Hours</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Monday - Friday</td>
-                      <td>9AM - 6PM</td>
-                    </tr>
-                    <tr>
-                      <td>Saturday - Sunday</td>
-                      <td>Closed</td>
-                    </tr>
-                  </tbody>
-              </table>
-        </div>
-        <!-- Embedded map of location -->
-        <div class="location">
-            <h2>Location</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567608!2d-75.75712548481953!3d45.349927779099744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669179498081!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <!-- Copyright -->
-        <footer>
+    </main>
+    <!-- Copyright -->
+    <footer class="wrapper">
+        <div class="copyright">
             <p>&#169; Copyright Three Star Media, 2020</p>
             <p>All images taken from <a href="https://unsplash.com" target="_blank">Unsplash</a></p>
-        </footer>
+        </div>
+    </footer>
 </body>
 </html>
