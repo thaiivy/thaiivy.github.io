@@ -24,19 +24,21 @@
     <!-- Creates navbar for anchors to parts of the page -->
         <div class="navbar">
             <div class="nav-content">
-                <img id="logo" src="images/logo.png" alt="Three Star Media's logo">
                 <ul>
-                    <li><a href="#" class="navitem">Home</a></li>
-                    <li><a href="#" class="navitem">About Us</a></li>
-                    <li><a href="#" class="navitem">Services</a></li>
-                    <li><a href="#" class="navitem">Team</a></li>
-                    <li><a href="#" class="navitem">Contact</a></li>
+                    <li><a href="#" class="navitem"><img id="logo" src="images/logo.png" alt="Three Star Media's logo">Home</a></li>
+                    <li><a href="#" class="navitem padnav">About Us</a></li>
+                    <li><a href="#" class="navitem padnav">Services</a></li>
+                    <li><a href="#" class="navitem padnav">Team</a></li>
+                    <li><a href="#" class="navitem padnav">Contact</a></li>
                 </ul>
                 <!-- Searchbar -->
-                <form class="searchbar">
-                    <input type="text" placeholder="Search">
-                    <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
-                </form>
+                <div class="searchbar">
+                    <form>
+                        <input type="text" placeholder="Search">
+                        <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
             </div>
         </div>
 
@@ -47,7 +49,7 @@
                     <h1>Welcome to Three Star Media</h1>
                 </div>
                 <div class="welcomep">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam inventore sapiente quaerat qui ducimus. Et, repellendus? Voluptas asperiores nostrum rerum commodi excepturi, hic ea autem, doloremque!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam inventore sapiente quaerat qui ducimus. Et, repellendus? Voluptas asperiores nostrum rerum commodi excepturi, hic ea autem, doloremque, repellendus? Voluptas asperiores nostrum rerum commodieue!<p>
                 </div>
                 <div class="connect">
                     <button id="connectbutton" type="button">Connect with us<i class="fa fa-caret-right"></i></button>
@@ -60,8 +62,8 @@
         <div class="wrapper">
             <!-- "About Us" anchor -->
             <div class="about">
-                <div class="about-image">
-                    <img src="images/about-us.jpg" alt="lounge with pingpong table">
+                <div>
+                    <img src="images/about-us.jpg" alt="lounge with pingpong table" class="about-image">
                 </div>
                 <div class="about-text">
                     <div class="abouttitle">
@@ -85,57 +87,67 @@
             <!-- Grid of services with buttons to respective pricing pages -->
             <div class="transformation">
                 <img src="images/digital.jpg" alt="person holding phone while typing on a laptop" class="serviceimage">
-                <div class="servicetitle">
+                <div class="servicetitle servicespadding">
                     <h3>Digital Transformation</h3>
                 </div>
-                <div class="servicep">
+                <div class="servicep servicespadding">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, et non, sint enim quibusdam, quaerat tenetur qui id natus ipsam perspiciatis praesentium iure magnam quae?</p>
                 </div>
-                <button type="button">Digital Plans<i class="fa fa-caret-right"></i></button>
+                <div class="servicebutton">
+                    <button type="button" id="digitalbutton">Digital Plans<i class="fa fa-caret-right"></i></button>
+                </div>
             </div>
                 
             <div class="marketing">
                 <img src="images/marketing.jpg" alt="laptop with graphs" class="serviceimage">
-                <div class="servicetitle">
+                <div class="servicetitle servicespadding">
                     <h3>Marketing</h3>
                 </div>
-                <div class="servicep">
+                <div class="servicep servicespadding">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, et non, sint enim quibusdam, quaerat tenetur qui id natus ipsam perspiciatis praesentium iure magnam quae?</p>
                 </div>
-                <button type="button">Marketing Plans<i class="fa fa-caret-right"></i></button>
+                <div class="servicebutton">
+                    <button type="button" id="marketingbutton">Marketing Plans<i class="fa fa-caret-right"></i></button>
+                </div>
             </div>
 
             <div class="video">
                 <img src="images/video.jpg" alt="phone with YouTube app open" class="serviceimage">
-                <div class="servicetitle">
+                <div class="servicetitle servicespadding">
                     <h3>Video Production</h3>
                 </div>
-                <div class="servicep">
+                <div class="servicep servicespadding">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, et non, sint enim quibusdam, quaerat tenetur qui id natus ipsam perspiciatis praesentium iure magnam quae?</p>
                 </div>
-                <button type="button">Video Plans<i class="fa fa-caret-right"></i></button>
+                <div class="servicebutton">
+                    <button type="button" id="videobutton">Video Plans<i class="fa fa-caret-right"></i></button>
+                </div>
             </div>
 
             <div class="webdev">
                 <img src="images/web.jpg" alt="phone with Instagram open on a notebook" class="serviceimage">
-                <div class="servicetitle">
+                <div class="servicetitle servicespadding">
                     <h3>Web Development</h3>
                 </div>
-                <div class="servicep">
+                <div class="servicep servicespadding">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, et non, sint enim quibusdam, quaerat tenetur qui id natus ipsam perspiciatis praesentium iure magnam quae?</p>
                 </div>
-                <button type="button">Web Plans<i class="fa fa-caret-right"></i></button>
+                <div class="servicebutton">
+                    <button type="button" id="webbutton">Web Plans<i class="fa fa-caret-right"></i></button>
+                </div>
             </div>
 
             <div class="print">
                 <img src="images/print.jpg" alt="line of newspaper boxes on a street" class="serviceimage">
-                <div class="servicetitle">
+                <div class="servicetitle servicespadding">
                     <h3>Print</h3>
                 </div>
-                <div class="servicep">
+                <div class="servicep servicespadding">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, et non, sint enim quibusdam, quaerat tenetur qui id natus ipsam perspiciatis praesentium iure magnam quae?</p>
                 </div>
-                <button type="button">Print Plans<i class="fa fa-caret-right"></i></button>
+                <div class="servicebutton">
+                    <button type="button" id="printbutton">Print Plans<i class="fa fa-caret-right"></i></button>
+                </div>
             </div>
         </div>
 
@@ -152,16 +164,16 @@
 
         <!-- "Team" anchor and grid -->
         <div class="wrapper">
-            <div class="strip">
+            <div class="ourteam">
                 <div class="team-title">
-                    <h2>Our Team</h2>
+                    <h2 class="teampadding">Our Team</h2>
                 </div>
                     
                 <div class="john">
-                    <div class="john-image">
-                        <img src="images/john.jpg" alt="photo of John Doe">
+                    <div>
+                        <img src="images/john.jpg" alt="photo of John Doe"  class="john-image">
                     </div>
-                    <div class="john-text">
+                    <div class="john-text teampadding">
                         <h4 class="name">John Doe</h4>
                         <p class="teamsub">CEO and Co-owner</p>
                         <hr>
@@ -170,10 +182,10 @@
                 </div>
 
                 <div class="bob">
-                    <div class="bob-image">
-                        <img src="images/bob.jpg" alt="photo of Bob Rite">
+                    <div>
+                        <img src="images/bob.jpg" alt="photo of Bob Rite" class="bob-image">
                     </div>
-                    <div class="bob-text">
+                    <div class="bob-text teampadding">
                         <h4 class=name>Bob Rite</h4>
                         <p class="teamsub">CEO and Co-owner</p>
                         <hr>
@@ -190,39 +202,39 @@
                 </div>
 
                 <div class="message-form">
-                    <h5>Send us a message</h5>
-                    <form action="#" method="post" class="contactform">
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="fullname" required>
+                    <h5 id="messagetitle">Send us a message</h5>
+                    <form action="#" method="post" id="contactform">
+                        <label for="fullname" class="contactitem">Full Name</label>
+                        <input class="contactitem" type="text" id="fullname" name="fullname" required>
 
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" required>
+                        <label for="email" class="contactitem" id="email">Email</label>
+                        <input class="contactitem" type="text" id="email" name="email" required>
 
-                        <label>Message</label>
-                        <textarea name="messagebox"></textarea>
+                        <label class="contactitem" id="message">Message</label>
+                        <textarea class="contactitem" name="messagebox"></textarea>
 
-                        <button type="submit">Send</button>
+                        <button id="sendbutton" type="submit">Send</button>
                     </form>
                 </div>
                 
                 <!--Table of hours -->
                 <div class="hours">
-                    <table>
+                    <table class="tablehours tableborder">
                         <caption>Hours of operation</caption>
                         <thead>
                             <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
+                            <th class="tableborder">Days</th>
+                            <th class="tableborder">Hours</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <td>Monday - Friday</td>
-                            <td>9AM - 6PM</td>
+                            <td class="tableborder" id="days1">Monday - Friday</td>
+                            <td class="tableborder">9AM - 6PM</td>
                             </tr>
                             <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
+                            <td class="tableborder" id="days2">Saturday - Sunday</td>
+                            <td class="tableborder">Closed</td>
                             </tr>
                         </tbody>
                     </table>
@@ -231,8 +243,8 @@
 
                 <!-- Embedded map of location -->
                 <div class="location">
-                    <h5>Location</h5>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567608!2d-75.75712548481953!3d45.349927779099744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669179498081!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h5 id="locationtitle">Location</h5>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567608!2d-75.75712548481953!3d45.349927779099744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669179498081!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
