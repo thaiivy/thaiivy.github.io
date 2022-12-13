@@ -64,7 +64,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -122,6 +122,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
+    padding: 20px;
 }
 
 .about {
@@ -216,8 +218,8 @@ p {
     padding-bottom: 10px;
 }
 
-#connectbutton, #digitalbutton, #marketingbutton, #videobutton, #webbutton, #printbutton, #learnmore, #sendbutton {
-    font-size: 15px;
+#digitalbutton, #marketingbutton, #videobutton, #webbutton, #printbutton, #learnmore, #sendbutton {
+    font-size: 17px;
     padding: 20px;
     background-color: #222;
     color: white;
@@ -414,6 +416,17 @@ footer {
 @media screen and (min-width:760px) {
     #logo {
         width: 100%;
+        justify-content: left;
+    }
+
+    .navitem {
+        font-size: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    a:hover, a:active {
+        padding: 20px;
     }
 
     .searchbar, li {
@@ -421,9 +434,56 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    h1 {
+        font-size: 70px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    h2 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+    
+    h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    h4 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #222;
+    }
+
+    #messagetitle, #locationtitle, caption {
+        font-size: 30px;
+    }
+
+    p {
+        line-height: 22px;
+        font-size: 15px;;
+    }
+
+    /* .backgroundimg {
+        max-width: 1200px;
+    } */
+
     .welcometext {
         margin-left: 100px;
         margin-right: 100px;
+        width: 100%;
+    }
+
+    #connectbutton {
+        font-size: 20px;
+        padding: 27px;
+    }
+
+    .fa-caret-right {
+        padding-left: 20px;
+        font-size: 32px;
     }
 
     .about {
@@ -456,7 +516,7 @@ footer {
         display: grid;
         width: 100%;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 0.1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 0.5fr;
         grid-template-areas:
         "servicestitle servicestitle servicestitle servicestitle servicestitle servicestitle"
         "transformation transformation transformation marketing marketing marketing"
@@ -464,7 +524,72 @@ footer {
         ;
     }
 
-    .ourteam {
+    .servicep {
+        padding-left: 20px;
+    }
+
+    .servicespadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .servicebutton {
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    #digitalbutton, #marketingbutton, #videobutton, #webbutton, #printbutton {
+        width: 98%;
+        margin-right: 10px;
+        justify-content: center;
+    }
+
+    /* html, body {
+        background-size: 100%;
+        width: 100%;
+    } */
+
+    #backcolorteam {
+        background-color: #ffe6ac;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .john-image {
+        display: flex;
+        float: left;
+        width: 20%;
+    }
+
+    .john-text {
+        float: right;
+        width: 46%;
+        transform: translate(-10px, 10px);
+    }
+
+    .john-text p:nth-child(2), .john-text p:nth-child(4) {
+        font-size: 15px;
+    }
+
+    .bob-image {
+        float: right;
+        width: 49.2%;
+        transform: translateY(221px);
+        padding-bottom: 280px;
+        overflow: hidden;
+    }
+
+    .bob-text {
+        transform: translate(5px, 0px);
+        width: 48%;
+    }
+
+    .bob-text p:nth-child(2), .bob-text p:nth-child(4) {
+        font-size: 15px;
+    }
+
+    /* .ourteam {
         margin-left: 100px;
         margin-right: 100px;
         display: grid;
@@ -476,7 +601,8 @@ footer {
         "johnimage johntext"
         "bobtext bobimage"
         ;
-    }
+    } */
+
 
     .strip {
         margin-left: 100px;
@@ -485,12 +611,24 @@ footer {
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 0.4fr;
         grid-template-areas:
         "contactustitle contactustitle"
         "messageform location"
         "hours hours"
         ;
+    }
+
+    #contactus {
+        text-align: left;
+    }
+    
+    #contactbox {
+        display: inline-block;
+        justify-content: left;
+    }
+    .contact-title {
+        text-align: left;
     }
     
     .welcometitle {
@@ -502,5 +640,9 @@ footer {
         width: 100%;
     }
 
-
+    .tableborder {
+        font-size: 15px;
+        padding: 15px;
+    }
+    
 }
